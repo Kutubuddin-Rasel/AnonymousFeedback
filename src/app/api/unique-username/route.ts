@@ -11,13 +11,11 @@ export async function GET(request:Request) {
     await dbConnect();
     try {
     const {searchParams} = new URL(request.url)
-    console.log("searchParams : ",searchParams)
     const queryParams = {
         username:searchParams.get('username')
     }
     // validate with zod
     const result = UsernameQuerySchema.safeParse(queryParams)
-    console.log("validation result of username: ",result)
 
     if(!result.success){
         const usernameErrors = result.error.format().username?._errors || []

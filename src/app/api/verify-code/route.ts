@@ -1,6 +1,5 @@
 import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/model/User";
-import { use } from "react";
 
 export async function POST(request:Request) {
     await dbConnect()

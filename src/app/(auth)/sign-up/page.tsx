@@ -116,7 +116,7 @@ const page = () => {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="password" 
+                    <Input placeholder="email" 
                     {...field} 
                     />
                   </FormControl>
@@ -153,7 +153,7 @@ const page = () => {
         <div className="text-center mt-4">
           <p>
             Already a member?{' '}
-            <Link href={"/sing-in"} className="text-blue-600 hover:text-blue-800">
+            <Link href={"/sign-in"} className="text-blue-600 hover:text-blue-800">
             Log in
             </Link>
           </p>

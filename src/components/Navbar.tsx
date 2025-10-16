@@ -20,10 +20,10 @@ const Navbar = () => {
                     <>
                     <span className="mr-4">
                         Welcome, {user?.username || user?.email}
-                        <Button onClick={()=>signOut()} className="w-full mx-auto">
+                    </span>
+                        <Button onClick={()=>signOut()} className="w-full max-w-fit">
                             Logout
                         </Button>
-                    </span>
                     </>
                 ) :(
                     <Link href={"/sing-in"}>
